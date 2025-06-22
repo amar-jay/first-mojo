@@ -1,263 +1,262 @@
-[111748:111748:20250622,043253.443896:WARNING process_reader_linux.cc:144] no stack mapping
+[126572:126572:20250622,102558.509344:WARNING process_reader_linux.cc:144] no stack mapping
 Please submit a bug report to https://github.com/modular/modular/issues and include the crash backtrace along with all the relevant source codes.
 Stack dump:
 0.	Program arguments: /home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo example.mojo 2
-Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it):
-0  mojo      0x0000561a59e227ab
-1  mojo      0x0000561a59e20549
-2  mojo      0x0000561a59e22e5a
-3  libc.so.6 0x000073e9b9242520
-4  mojo      0x0000561a56de2547
-5  mojo      0x0000561a569b678c
-6  mojo      0x0000561a56de3b95
-7  mojo      0x0000561a56b9f8ed
-8  mojo      0x0000561a56de2c9d
-9  mojo      0x0000561a5676caf8
-10 mojo      0x0000561a56de3c15
-11 mojo      0x0000561a56ba12f8
-12 mojo      0x0000561a56de2c9d
-13 mojo      0x0000561a5676caf8
-14 mojo      0x0000561a56de3c15
-15 mojo      0x0000561a59d63bf6
-16 mojo      0x0000561a56de2c9d
-17 mojo      0x0000561a5676caf8
-18 mojo      0x0000561a56de3c15
-19 mojo      0x0000561a56dca262
-20 mojo      0x0000561a56de2c9d
-21 mojo      0x0000561a5676caf8
-22 mojo      0x0000561a56de3c15
-23 mojo      0x0000561a56dc9be4
-24 mojo      0x0000561a56de2c9d
-25 mojo      0x0000561a5676caf8
-26 mojo      0x0000561a56de3b15
-27 mojo      0x0000561a56d011d1
-28 mojo      0x0000561a56de28f6
-29 mojo      0x0000561a569b678c
-30 mojo      0x0000561a56de3a95
-31 mojo      0x0000561a56cfd5bd
-32 mojo      0x0000561a56de28f6
-33 mojo      0x0000561a569b678c
-34 mojo      0x0000561a56de3a95
-35 mojo      0x0000561a56cfd32c
-36 mojo      0x0000561a56de28f6
-37 mojo      0x0000561a569b678c
-38 mojo      0x0000561a56de3a95
-39 mojo      0x0000561a56cfda2f
-40 mojo      0x0000561a56de28f6
-41 mojo      0x0000561a569b678c
-42 mojo      0x0000561a56de3b95
-43 mojo      0x0000561a56b9f90c
-44 mojo      0x0000561a56de2c9d
-45 mojo      0x0000561a5676caf8
-46 mojo      0x0000561a56de3c15
-47 mojo      0x0000561a56ba12f8
-48 mojo      0x0000561a56de2c9d
-49 mojo      0x0000561a5676caf8
-50 mojo      0x0000561a56de3c15
-51 mojo      0x0000561a59d63bf6
-52 mojo      0x0000561a56de2c9d
-53 mojo      0x0000561a5676caf8
-54 mojo      0x0000561a56de3c15
-55 mojo      0x0000561a56dca262
-56 mojo      0x0000561a56de2c9d
-57 mojo      0x0000561a5676caf8
-58 mojo      0x0000561a56de3c15
-59 mojo      0x0000561a56dc9be4
-60 mojo      0x0000561a56de2c9d
-61 mojo      0x0000561a5676caf8
-62 mojo      0x0000561a56de3b15
-63 mojo      0x0000561a56d011d1
-64 mojo      0x0000561a56de28f6
-65 mojo      0x0000561a569b678c
-66 mojo      0x0000561a56de3a95
-67 mojo      0x0000561a56cfd5bd
-68 mojo      0x0000561a56de28f6
-69 mojo      0x0000561a569b678c
-70 mojo      0x0000561a56de3a95
-71 mojo      0x0000561a56cfd32c
-72 mojo      0x0000561a56de28f6
-73 mojo      0x0000561a569b678c
-74 mojo      0x0000561a56de3a95
-75 mojo      0x0000561a56cfda2f
-76 mojo      0x0000561a56de28f6
-77 mojo      0x0000561a569b678c
-78 mojo      0x0000561a56de3a95
-79 mojo      0x0000561a56cfb9ec
-80 mojo      0x0000561a56de28f6
-81 mojo      0x0000561a569b678c
-82 mojo      0x0000561a56de3b95
-83 mojo      0x0000561a56b9f90c
-84 mojo      0x0000561a56de2c9d
-85 mojo      0x0000561a5676caf8
-86 mojo      0x0000561a569f36b3
-87 mojo      0x0000561a57573e91
-88 mojo      0x0000561a569f1b45
-89 mojo      0x0000561a57572841
-90 mojo      0x0000561a569f1d30
-91 mojo      0x0000561a569f3b8c
-92 mojo      0x0000561a57573e91
-93 mojo      0x0000561a569f1b26
-94 mojo      0x0000561a57572841
-95 mojo      0x0000561a57573c1e
-96 mojo      0x0000561a56cfb9ec
-97 mojo      0x0000561a5757292e
-98 mojo      0x0000561a57573c1e
-99 mojo      0x0000561a56dcd225
-100 mojo      0x0000561a57573f7e
-101 mojo      0x0000561a57573d1e
-102 mojo      0x0000561a56dcc4cc
-103 mojo      0x0000561a57573f7e
-104 mojo      0x0000561a569f3886
-105 mojo      0x0000561a57573e91
-106 mojo      0x0000561a57573d1e
-107 mojo      0x0000561a56dcc4cc
-108 mojo      0x0000561a57573f7e
-109 mojo      0x0000561a569f3886
-110 mojo      0x0000561a57573e91
-111 mojo      0x0000561a569f1b45
-112 mojo      0x0000561a57572841
-113 mojo      0x0000561a569f1d30
-114 mojo      0x0000561a569f3b8c
-115 mojo      0x0000561a57573e91
-116 mojo      0x0000561a569f1b26
-117 mojo      0x0000561a57572841
-118 mojo      0x0000561a57573c1e
-119 mojo      0x0000561a56cfb9ec
-120 mojo      0x0000561a5757292e
-121 mojo      0x0000561a57573c1e
-122 mojo      0x0000561a56dcd225
-123 mojo      0x0000561a57573f7e
-124 mojo      0x0000561a57573d1e
-125 mojo      0x0000561a56dcc4cc
-126 mojo      0x0000561a57573f7e
-127 mojo      0x0000561a569f3886
-128 mojo      0x0000561a57573e91
-129 mojo      0x0000561a57573d1e
-130 mojo      0x0000561a56dcc4cc
-131 mojo      0x0000561a57573f7e
-132 mojo      0x0000561a569f3886
-133 mojo      0x0000561a57573e91
-134 mojo      0x0000561a569f1b45
-135 mojo      0x0000561a57572841
-136 mojo      0x0000561a569f1d30
-137 mojo      0x0000561a569f3b8c
-138 mojo      0x0000561a57573e91
-139 mojo      0x0000561a569f1b26
-140 mojo      0x0000561a57572841
-141 mojo      0x0000561a57573c1e
-142 mojo      0x0000561a56cfb9ec
-143 mojo      0x0000561a5757292e
-144 mojo      0x0000561a57573c1e
-145 mojo      0x0000561a56dcd225
-146 mojo      0x0000561a57573f7e
-147 mojo      0x0000561a57573d1e
-148 mojo      0x0000561a56dcc4cc
-149 mojo      0x0000561a57573f7e
-150 mojo      0x0000561a569f3886
-151 mojo      0x0000561a57573e91
-152 mojo      0x0000561a57573d1e
-153 mojo      0x0000561a56dcc4cc
-154 mojo      0x0000561a57573f7e
-155 mojo      0x0000561a569f3886
-156 mojo      0x0000561a57573e91
-157 mojo      0x0000561a569f1b45
-158 mojo      0x0000561a57572841
-159 mojo      0x0000561a569f1d30
-160 mojo      0x0000561a569f3b8c
-161 mojo      0x0000561a57573e91
-162 mojo      0x0000561a569f1b26
-163 mojo      0x0000561a57572841
-164 mojo      0x0000561a57573c1e
-165 mojo      0x0000561a56cfb9ec
-166 mojo      0x0000561a5757292e
-167 mojo      0x0000561a57573c1e
-168 mojo      0x0000561a56dcd225
-169 mojo      0x0000561a57573f7e
-170 mojo      0x0000561a57573d1e
-171 mojo      0x0000561a56dcc4cc
-172 mojo      0x0000561a57573f7e
-173 mojo      0x0000561a569f3886
-174 mojo      0x0000561a57573e91
-175 mojo      0x0000561a57573d1e
-176 mojo      0x0000561a56dcc4cc
-177 mojo      0x0000561a57573f7e
-178 mojo      0x0000561a569f3886
-179 mojo      0x0000561a57573e91
-180 mojo      0x0000561a569f1b45
-181 mojo      0x0000561a57572841
-182 mojo      0x0000561a569f1d30
-183 mojo      0x0000561a569f3b8c
-184 mojo      0x0000561a57573e91
-185 mojo      0x0000561a569f1b26
-186 mojo      0x0000561a57572841
-187 mojo      0x0000561a57573c1e
-188 mojo      0x0000561a56cfb9ec
-189 mojo      0x0000561a5757292e
-190 mojo      0x0000561a57573c1e
-191 mojo      0x0000561a56dcd225
-192 mojo      0x0000561a57573f7e
-193 mojo      0x0000561a57573d1e
-194 mojo      0x0000561a56dcc4cc
-195 mojo      0x0000561a57573f7e
-196 mojo      0x0000561a569f3886
-197 mojo      0x0000561a57573e91
-198 mojo      0x0000561a57573d1e
-199 mojo      0x0000561a56dcc4cc
-200 mojo      0x0000561a57573f7e
-201 mojo      0x0000561a569f3886
-202 mojo      0x0000561a57573e91
-203 mojo      0x0000561a569f1b45
-204 mojo      0x0000561a57572841
-205 mojo      0x0000561a569f1d30
-206 mojo      0x0000561a569f3b8c
-207 mojo      0x0000561a57573e91
-208 mojo      0x0000561a569f1b26
-209 mojo      0x0000561a57572841
-210 mojo      0x0000561a57573c1e
-211 mojo      0x0000561a56cfb9ec
-212 mojo      0x0000561a5757292e
-213 mojo      0x0000561a57573c1e
-214 mojo      0x0000561a56dcd225
-215 mojo      0x0000561a57573f7e
-216 mojo      0x0000561a57573d1e
-217 mojo      0x0000561a56dcc4cc
-218 mojo      0x0000561a57573f7e
-219 mojo      0x0000561a569f3886
-220 mojo      0x0000561a57573e91
-221 mojo      0x0000561a57573d1e
-222 mojo      0x0000561a56dcc4cc
-223 mojo      0x0000561a57573f7e
-224 mojo      0x0000561a569f3886
-225 mojo      0x0000561a57573e91
-226 mojo      0x0000561a569f1b45
-227 mojo      0x0000561a57572841
-228 mojo      0x0000561a569f1d30
-229 mojo      0x0000561a569f3b8c
-230 mojo      0x0000561a57573e91
-231 mojo      0x0000561a569f1b26
-232 mojo      0x0000561a57572841
-233 mojo      0x0000561a57573c1e
-234 mojo      0x0000561a56cfb9ec
-235 mojo      0x0000561a5757292e
-236 mojo      0x0000561a57573c1e
-237 mojo      0x0000561a56dcd225
-238 mojo      0x0000561a57573f7e
-239 mojo      0x0000561a57573d1e
-240 mojo      0x0000561a56dcc4cc
-241 mojo      0x0000561a57573f7e
-242 mojo      0x0000561a569f3886
-243 mojo      0x0000561a57573e91
-244 mojo      0x0000561a57573d1e
-245 mojo      0x0000561a56dcc4cc
-246 mojo      0x0000561a57573f7e
-247 mojo      0x0000561a569f3886
-248 mojo      0x0000561a57573e91
-249 mojo      0x0000561a569f1b45
-250 mojo      0x0000561a57572841
-251 mojo      0x0000561a569f1d30
-252 mojo      0x0000561a569f3b8c
-253 mojo      0x0000561a57573e91
-254 mojo      0x0000561a569f1b26
-255 mojo      0x0000561a57572841
+  #0 0x000056f5570937ab (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x5e027ab)
+  #1 0x000056f557091549 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x5e00549)
+  #2 0x000056f557093e5a (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x5e02e5a)
+  #3 0x00007bd542a42520 (/lib/x86_64-linux-gnu/libc.so.6+0x42520)
+  #4 0x000056f554053b40 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2b40)
+  #5 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+  #6 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+  #7 0x000056f553e122f8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2b812f8)
+  #8 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+  #9 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #10 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #11 0x000056f556fd4bf6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x5d43bf6)
+ #12 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #13 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #14 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #15 0x000056f55403b262 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2daa262)
+ #16 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #17 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #18 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #19 0x000056f55403abe4 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2da9be4)
+ #20 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #21 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #22 0x000056f554054b15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3b15)
+ #23 0x000056f553f721d1 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2ce11d1)
+ #24 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #25 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #26 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #27 0x000056f553f6e5bd (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdd5bd)
+ #28 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #29 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #30 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #31 0x000056f553f6e32c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdd32c)
+ #32 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #33 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #34 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #35 0x000056f553f6ea2f (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdda2f)
+ #36 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #37 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #38 0x000056f554054b95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3b95)
+ #39 0x000056f553e1090c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2b7f90c)
+ #40 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #41 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #42 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #43 0x000056f553e122f8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2b812f8)
+ #44 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #45 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #46 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #47 0x000056f556fd4bf6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x5d43bf6)
+ #48 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #49 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #50 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #51 0x000056f55403b262 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2daa262)
+ #52 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #53 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #54 0x000056f554054c15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3c15)
+ #55 0x000056f55403abe4 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2da9be4)
+ #56 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #57 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #58 0x000056f554054b15 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3b15)
+ #59 0x000056f553f721d1 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2ce11d1)
+ #60 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #61 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #62 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #63 0x000056f553f6e5bd (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdd5bd)
+ #64 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #65 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #66 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #67 0x000056f553f6e32c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdd32c)
+ #68 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #69 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #70 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #71 0x000056f553f6ea2f (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdda2f)
+ #72 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #73 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #74 0x000056f554054a95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3a95)
+ #75 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+ #76 0x000056f5540538f6 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc28f6)
+ #77 0x000056f553c2778c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x299678c)
+ #78 0x000056f554054b95 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc3b95)
+ #79 0x000056f553e1090c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2b7f90c)
+ #80 0x000056f554053c9d (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dc2c9d)
+ #81 0x000056f5539ddaf8 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x274caf8)
+ #82 0x000056f553c646b3 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d36b3)
+ #83 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+ #84 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+ #85 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+ #86 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+ #87 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+ #88 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+ #89 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+ #90 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+ #91 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+ #92 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+ #93 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+ #94 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+ #95 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+ #96 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+ #97 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+ #98 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+ #99 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#100 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#101 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#102 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#103 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#104 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#105 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#106 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#107 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#108 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#109 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#110 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#111 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#112 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#113 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#114 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#115 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#116 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#117 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#118 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+#119 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#120 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#121 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#122 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#123 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#124 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#125 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#126 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#127 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#128 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#129 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#130 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#131 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#132 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#133 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#134 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#135 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#136 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#137 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#138 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#139 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#140 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#141 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+#142 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#143 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#144 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#145 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#146 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#147 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#148 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#149 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#150 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#151 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#152 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#153 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#154 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#155 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#156 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#157 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#158 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#159 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#160 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#161 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#162 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#163 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#164 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+#165 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#166 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#167 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#168 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#169 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#170 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#171 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#172 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#173 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#174 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#175 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#176 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#177 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#178 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#179 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#180 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#181 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#182 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#183 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#184 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#185 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#186 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#187 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+#188 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#189 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#190 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#191 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#192 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#193 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#194 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#195 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#196 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#197 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#198 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#199 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#200 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#201 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#202 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#203 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#204 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#205 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#206 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#207 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#208 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#209 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#210 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+#211 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#212 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#213 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#214 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#215 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#216 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#217 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#218 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#219 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#220 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#221 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#222 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#223 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#224 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#225 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#226 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#227 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#228 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#229 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#230 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#231 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#232 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#233 0x000056f55403e225 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dad225)
+#234 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#235 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#236 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#237 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#238 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#239 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#240 0x000056f5547e4d1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553d1e)
+#241 0x000056f55403d4cc (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2dac4cc)
+#242 0x000056f5547e4f7e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553f7e)
+#243 0x000056f553c64886 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3886)
+#244 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#245 0x000056f553c62b45 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b45)
+#246 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#247 0x000056f553c62d30 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1d30)
+#248 0x000056f553c64b8c (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d3b8c)
+#249 0x000056f5547e4e91 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553e91)
+#250 0x000056f553c62b26 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x29d1b26)
+#251 0x000056f5547e3841 (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3552841)
+#252 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
+#253 0x000056f553f6c9ec (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x2cdb9ec)
+#254 0x000056f5547e392e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x355292e)
+#255 0x000056f5547e4c1e (/home/amarjay/Desktop/code/modular/.venv/modular/bin/mojo+0x3553c1e)
 mojo crashed!
 Please file a bug report.
