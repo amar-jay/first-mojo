@@ -1,5 +1,21 @@
 from math import e, log, floor
 
+
+alias OP_ADD = 1
+alias OP_SUB = 2
+alias OP_MUL = 3
+alias OP_DIV = 4
+alias OP_POW = 5
+alias OP_MOD = 6
+alias OP_GE = 7
+alias OP_GT = 8
+alias OP_EQ = 9
+alias OP_NE = 10
+alias OP_LE = 11
+alias OP_LT = 12
+alias OP_RELU = 13
+alias OP_INIT = 14 # nothing
+
 def exp(x:Float64) -> Float64:
   return e ** x
 
@@ -13,27 +29,27 @@ struct Tensor(Stringable, Movable, Copyable):
   var data: Float64
   var _prevs: List[Tensor]
   var grad: Float64
-  var _backward: Tuple[Optional[Tensor], String]
+  var _backward: Tuple[Optional[Tensor], Int]
 
   def __init__(out self, data:Float64, _prevs:List[Tensor]=[]):
     self.data = data
     self._prevs = _prevs
     self.grad = 0.0
-    self._backward = (None, "__init__")
+    self._backward = (None, OP_INIT)
 
   def __add__(self, other:Tensor)-> Tensor:
     out = Tensor(self.data + other.data, _prevs=[self, other])
-    out._backward = (out, "__add__")
+    out._backward = (out, OP_ADD)
     return out
 
   def __mul__(self, other:Tensor) -> Tensor:
     out = Tensor(self.data * other.data, _prevs=[self, other])
-    out._backward = (out, "__mul__")
+    out._backward = (out, OP_MUL)
     return out
 
   def __pow__(self, other:Tensor)-> Tensor:
     out =  Tensor(self.data ** other.data, _prevs=[self, other])
-    out._backward = (out, "__pow__")
+    out._backward = (out, OP_POW)
     return out
 
   def __sub__(self, other:Tensor) -> Tensor:
@@ -52,27 +68,27 @@ struct Tensor(Stringable, Movable, Copyable):
 
   def __mod__(self, other:Tensor)-> Tensor:
     out = Tensor(self.data % other.data, _prevs=[self, other])
-    out._backward = (out, "__mod__")
+    out._backward = (out, OP_MOD)
     return out
 
   def __ge__(self, other:Tensor)->Tensor:
     out = Tensor(1 if self.data >= other.data else 0, _prevs=[self, other])
-    out._backward = (out, "__ge__")
+    out._backward = (out, OP_GE)
     return out
 
   def __gt__(self, other:Tensor)->Tensor:
     out = Tensor(1 if self.data > other.data else 0, _prevs=[self, other])
-    out._backward = (out, "__gt__")
+    out._backward = (out, OP_GT)
     return out
 
   def __le__(self, other:Tensor)->Tensor:
     out = Tensor(1 if self.data <= other.data else 0, _prevs=[self, other])
-    out._backward = (out, "__le__")
+    out._backward = (out, OP_LE)
     return out
 
   def __lt__(self, other:Tensor)->Tensor:
     out = Tensor(1 if self.data < other.data else 0, _prevs=[self, other])
-    out._backward = (out, "__lt__")
+    out._backward = (out, OP_LT)
     return out
 
   def __eq__(self, other:Tensor) -> Tensor:
@@ -162,7 +178,7 @@ fn tensor_preorder_traversal(
 
 def relu(x:Tensor) -> Tensor:
   out = Tensor(max(0, x.data), _prevs=[x])
-  out._backward = (out, "relu")
+  out._backward = (out, OP_RELU)
   return out
 
 def relu_back(_out: Tensor):
@@ -172,26 +188,27 @@ def relu_back(_out: Tensor):
     else:
         _self.grad += 0
 
-def select_op_back(_out:Tensor, op:String):
-  if op == "__add__":
+
+def select_op_back(_out:Tensor, op:Int):
+  if op == OP_ADD:
       _out._add_back(_out)
-  elif op == "__mul__":
+  elif op == OP_MUL:
       _out._mul_back(_out)
-  elif op == "__pow__":
+  elif op == OP_POW:
       _out._pow_back(_out)
-  elif op == "__mod__":
+  elif op == OP_MOD:
       _out._mod_back(_out)
-  elif op == "__ge__":
+  elif op == OP_GE:
       _out._ge_back(_out)
-  elif op == "__gt__":
+  elif op == OP_GT:
       _out._gt_back(_out)
-  elif op == "__le__":
+  elif op == OP_LE:
       _out._le_back(_out)
-  elif op == "__lt__":
+  elif op == OP_LT:
       _out._lt_back(_out)
-  elif op == "__eq__":
+  elif op == OP_EQ:
       _out._eq_back(_out)
-  elif op == "relu":
+  elif op == OP_RELU:
       relu_back(_out)
 
 def backpropagate(transversed:List[Tensor]):
