@@ -5,7 +5,7 @@ This is a temporary measure until Mojo's memory issues are resolved.
 """
 
 import math
-from typing import List, Optional, Tuple, final
+from typing import List, Optional, Tuple
 
 class Tensor:
     def __init__(self, data: float, _prevs: List["Tensor"] = []):
